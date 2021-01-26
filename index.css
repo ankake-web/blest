@@ -379,7 +379,15 @@ body{
 
 
 
-/* タブレットサイズ以上に限定 */
+/* PCサイズ以上に限定 */
+@media screen and (min-width: 992px) {
+  .vio-img{
+    display: none;
+  }
+
+}
+
+/* タブレットサイズ以下に限定 */
 @media screen and (max-width: 991px) {
   .google-map {
       margin: 5% 10%;
@@ -398,6 +406,13 @@ body{
     width: 30%;
     padding-bottom: 0%;
   }
+  .all-img{
+    display: none;
+  }
+  .hige_img{
+    width: 75%;
+    
+  }
 
 }
 
@@ -411,6 +426,7 @@ body{
     pointer-events: none;
     cursor: default;
   }
+
 }
 
 
@@ -457,6 +473,27 @@ body{
 
 }
 
+@media screen and (max-width: 768px){
+  .modal-menu{
+    margin-left: 0em;
+  }
+  .modai-close{
+    margin-right: 0em;
+  }
+  .index-reserve{
+    padding: 1.5rem;
+  }
+}
+
+
+@media screen and (max-width: 400px){
+  .modal-menu{
+    margin-right: 3em;
+  }
+  .modai-close{
+    display: none;
+  }
+}
 
 
 /* モーダル開閉用ボタンのスタイル */
